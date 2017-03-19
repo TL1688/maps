@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Google Maps Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            html,
+            body {
+                font-family: Arial, sans-serif;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #map {
+                height: 100%;
+            }
+            
+        </style>
+        
+        
+    </head>
+    <body>
+        
+        <div id="map"></div>
+        <script>
+            var map;
+            function initMap() {
+                // constructor creates a new map - only center and zoom are required.
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 40.7413549, lng: -73.9980244},
+                zoom: 13
+            });
+            var tribeca = {lat: 40.719526, lng: -74.0089934};
+            var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var marker = new google.maps.Marker({
+                position: tribeca,
+                map: map,
+                draggable:true,
+                title: 'Party here!',
+                icon: image
+            });
+           
+            }
+        </script>
+        
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZQv8fn6wHjRTOJeXCDuxG54mkCetQa8o&v=3&callback=initMap">
+                    </script>
+              
+              
+           
+        
+    </body>
+</html>
