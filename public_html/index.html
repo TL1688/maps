@@ -38,17 +38,33 @@ and open the template in the editor.
                 center: {lat: 40.7413549, lng: -73.9980244},
                 zoom: 13
             });
-            var tribeca = {lat: 40.719526, lng: -74.0089934};
-            var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-        var marker = new google.maps.Marker({
-                position: tribeca,
-                map: map,
-                draggable:true,
-                title: 'Party here!',
-                icon: image
-            });
            
-            }
+        
+//        var tribeca = {lat: 40.719526, lng: -74.0089934};
+//            var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+//        var marker = new google.maps.Marker({
+//                position: tribeca,
+//                map: map,
+//                draggable: true,
+//                title: 'Party here!',
+//                icon: image
+//            });
+//            
+//            var infowindow = new google.maps.InfoWindow({
+//                content: 'Park here and party,' ' press 5 to start.'
+//            });
+//            marker.addListener('click', function() {
+//                infowindow.open(map, marker);
+//            });
+//            }
+
+            var locations = [
+                {title: 'Park Ave Penthouse', location: {lat: 40.7713024, lng: -73.9895759}
+            ]
+            
+            
+            
+            
         </script>
         
         <script async defer
